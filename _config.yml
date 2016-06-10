@@ -4,7 +4,7 @@ permalink:           pretty
 # Setup
 title:               Progress
 tagline:             A responsive blog theme that illustrates reading progress. Suited for continous reading.
-url:                 localhost:4000
+url:                 
 baseurl:             ""
 analytics_id:
 
