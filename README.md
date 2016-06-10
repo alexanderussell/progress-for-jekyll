@@ -11,10 +11,6 @@ If you feel like donating — [Give it a thought.](http://CHANGE ME)
 
 ---
 
-
-![Progress for Jekyll](http://cl.ly/Qdzo/Screen%20Shot%202013-08-05%20at%205.35.11%20PM.jpg)
-![Progress for Jekyll](http://cl.ly/Qdyh/Screen%20Shot%202013-08-05%20at%205.30.01%20PM.jpg)
-
 ## Features:
 - flexible, uses max-width for responsive goodness
 - beautiful reading progress indicator courtesy of [CodyHouse](https://codyhouse.co/)
@@ -73,18 +69,17 @@ Change your name, bio, Twitter url, email, Dribbble URL, etc.
 
 ### Top Navigation Links
 
-Edit page/post titles and URLs to include in the site's navigation. For external links add `external: true`.
+Edit page/post titles and URLs to include in the site's navigation. For external links use "url:" instead of "href:".
 
 ``` yaml
 # sample top navigation links
 links:
   - title: About Page
-    url: /about
+    href: /about
   - title: Other Page
-    url: /other-page
+    href: /other-page
   - title: External Page
-    url: http://coletownsend.com
-    external: true
+    url: http://alexanderussell.org
 ```
 
 ## Other Stuff
@@ -101,11 +96,7 @@ There are two main content layouts: `post.html` (for posts) and `page.html` (for
 
 
 ``` yaml
-image:
-# local image 
-  feature: feature-image-filename.jpg
-# link image
-  feature: "http(s)://image.domain.com/feature-image-filename.jpg"
+
 ```
 
 
