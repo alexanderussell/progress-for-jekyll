@@ -1,0 +1,35 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               Progress
+tagline:             A responsive blog theme that illustrates reading progress. Suited for continous reading.
+url:                 localhost:4000
+baseurl:             ""
+analytics_id:
+
+# Owner/author information
+owner:
+  name:           Alex Russell
+  avatar:         avatar.png
+  bio:            "Designer."
+  email:          alex@collectivelymade.com
+  twitter:        alexanderussell
+  github:         alexanderussell
+  instagram:      alexanderussell
+  dribbble:       alexanderussell
+  location:       "Lincoln, NE"
+
+
+# Custom vars
+version:             2.0.0
+github:
+  repo:              
+
+# Pagination
+paginate: 5
+paginate_path: "blog/page:num"
+
+# Gems
+gems:
+  - jekyll-paginate

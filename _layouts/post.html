@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="articles">
+  <article>
+    <header>
+      {% if page.img %}
+      <img src="{{site.baseurl}}/img/{{page.img}}" alt="{{page.img}}">
+      {% endif %}
+      <h1> {{ page.title }} </h1>
+    </header>
+    
+    {{ content }}
+    {% include _share-post.html %}
+  </article>
+
+  <aside class="related">
+      <ul>
+        {% for post in site.related_posts limit: 5 %}
+        {% unless post.draft %}
+        <li>
+          <a href="{{post.url}}">
+            <h3><em>{{post.title}}</em></h3>
+            <small><b>{{post.author}}</b></small>
+          </a>
+        </li>
+        {% endunless %}
+        {% endfor %}
+      </ul>
+
+    </aside>
+</div>

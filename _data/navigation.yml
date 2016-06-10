@@ -1,0 +1,12 @@
+# href if page on site, url if page is offsite
+
+- title: Home
+  href: "/"
+- title: About
+  href: "/about"
+- title: Archive
+  href: "/archive"
+- title: Donate
+  url: ""
+- title: Alex Who?
+  url: "http://alexanderussell.org"

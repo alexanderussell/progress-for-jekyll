@@ -1,0 +1,71 @@
+---
+layout: default
+title: Home
+---
+
+<div class="articles">
+  {% for post in paginator.posts limit:5  %}
+  {% unless post.draft %}
+  <article>
+    <header>
+      {% if post.img %}
+      <img src="{{site.baseurl}}/img/{{post.img}}" alt="{{post.img}}">
+      {% endif %}
+      <h1> {{ post.title }} </h1>
+    </header>
+    
+    {{ post.content }}
+    {% include _share-post.html %}
+
+  </article>
+  {% endunless %}
+  {% endfor %}
+
+  <aside class="read-more">
+    <ul>
+      {% for post in paginator.posts limit:5  %}
+      {% unless post.draft %}
+      <li>
+        <a href="#">
+          <h3><em>{{post.title}}</em></h3>
+          <small><b>{{post.author}}</b></small>
+          <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36"><circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+        </a>
+      </li>
+      {% endunless %}
+      {% endfor %}
+    </ul>
+
+  </aside>
+
+  {% if paginator.total_pages > 1 %}
+
+  <div class="pagination nugget-info tc">
+  
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" >
+      Older
+    </a>
+    
+    {% else %}
+    <a class="button disabled" >
+      Older
+    </a>
+    {% endif %}
+
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" >
+      Newer
+    </a>
+    
+    {% else %}
+    <a class="button disabled" >
+      Newer
+    </a>
+    {% endif %}
+  </div>
+
+  {% endif %}
+</div>
+
+
