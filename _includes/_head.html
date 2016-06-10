@@ -30,11 +30,11 @@
     <meta content="{{ site.description }}" property="og:description">
   {% endif %}
   {% if post.url %}
-    <meta content="{{ site.url }}{{ post.url }}" property="og:url">
+    <meta content="{{site.baseurl}}{{ post.url }}" property="og:url">
   {% endif %}
   {% if post.date %}
     <meta content="{{ post.date | date_to_xmlschema }}" property="article:published_time">
-    <meta content="{{ site.url }}/about/" property="article:author">
+    <meta content="{{site.baseurl}}/about/" property="article:author">
   {% endif %}
   {% if post.img %}
     <meta content="/img/{{ post.img }}" property="og:image">
@@ -50,7 +50,7 @@
     <meta name="twitter:title" content="{{ site.title }}">
   {% endif %}
   {% if post.url %}
-    <meta name="twitter:url" content="{{ site.url }}{{ post.url }}">
+    <meta name="twitter:url" content="{{site.baseurl}}{{ post.url }}">
   {% endif %}
   {% if post.description %}
     <meta name="twitter:description" content="{{ post.description }}">
@@ -58,7 +58,7 @@
     <meta name="twitter:description" content="{{ site.description }}">
   {% endif %}
   {% if post.header-img %}
-    <meta name="twitter:image:src" content="{{ site.url }}/{{ post.img }}">
+    <meta name="twitter:image:src" content="{{site.baseurl}}/{{ post.img }}">
   {% endif %}
 
   
