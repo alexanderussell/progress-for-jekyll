@@ -4,8 +4,8 @@ permalink:           pretty
 # Setup
 title:               Progress
 tagline:             A responsive blog theme that illustrates reading progress. Suited for continous reading.
-url:                 "/progress-for-jekyll"
-baseurl:             "/progress-for-jekyll"
+url:                 "alexanderussell.github.io/progress-for-jekyll"
+baseurl:             "alexanderussell.github.io/progress-for-jekyll"
 analytics_id:
 
 # Owner/author information
