@@ -16,6 +16,6 @@ This is a post that uses a `figure`. It stacks these images and places a nice li
 {% highlight html linenos %}
 <figure>
 	<img src="/img/img-1.png">
-	<figcaption>Caption describing these two images.</figcaption>
+	<figcaption>Caption describing this image.</figcaption>
 </figure>
 {% endhighlight %}

@@ -94,7 +94,7 @@ The rest is just your average Jekyll config settings. Nothing too crazy here...
 
 ### _includes
 
-For the most part you can leave these as is since the author/owner details are pulled from `_config.yml`. That said you'll probably want to customize the copyright stuff in `footer.html` to your liking.
+For the most part you can leave these as is since the author/owner details are pulled from `_config.yml`. That said you'll probably want to customize the copyright stuff in `_footer.html` to your liking.
 
 ### Adding Posts and Pages
 
