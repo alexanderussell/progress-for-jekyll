@@ -7,7 +7,7 @@ img: img-1.png
 
 Progress was built and inspired by [Cody House's](https://codyhouse.co/) [Reading Progress Indicator](https://codyhouse.co/demo/reading-progress-indicator/index.html). The folks over at Cody House are pretty fantastic and are making some awesome things. They're also super responsive to comments, so head on over there and check out what they've been doing. 
 
-Progress features quick and simple environment is set up so users can input all the necesarry info in the config file and start blogging. Further reiterations are in progress to turn this into a Wordpress theme or make it fully editable with Cloudcannon CMS. I cannot let you resell this unless you [contact me](mailto:alex@collectivelymade.com)
+Progress features a quick and simple environment that is set up so users can input all the necesarry info in the config file and start blogging. Further reiterations are in progress to turn this into a Wordpress theme or make it fully editable with Cloudcannon CMS. I cannot let you resell this unless you [contact me](mailto:alex@collectivelymade.com).
 
 If you'd like give credit somewhere on your blog or tweet a shout out to
 [@alexanderussell](https://twitter.com/alexanderussell), that would be pretty sweet. 
@@ -20,8 +20,8 @@ If you feel like donating — [Give it a thought.](https://flattr.com/profile/al
 - flexible, uses max-width for responsive goodness
 - beautiful reading progress indicator courtesy of [CodyHouse](https://codyhouse.co/)
 - retina images using @2x
-- post loop in the footer showing 3 latest posts
-- custom portfolio page for case studies
+- post loop showing 5 posts per page
+- archive for posterity sake
 
 ## Basic Setup
 
@@ -29,8 +29,8 @@ If you feel like donating — [Give it a thought.](https://flattr.com/profile/al
 2. Download this bad boy.
 3. Fork the [Progress repo](http://github.com/alexanderussell/progress-for-jekyll/)
 4. Twerk it out so it's just for you.
-5.  ???
-6.  Profit
+5. ???
+6. Profit
 
 ## [Preview the Theme](http://alexanderussell.github.io/progress-for-jekyll)
 <br>
