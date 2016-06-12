@@ -2,12 +2,12 @@
 
 Progress was built and inspired by [Cody House's](https://codyhouse.co/) [Reading Progress Indicator](https://codyhouse.co/demo/reading-progress-indicator/index.html). The folks over at Cody House are pretty fantastic and are making some awesome things. They're also super responsive to comments, so head on over there and check out what they've been doing. 
 
-Progress features quick and simple environment is set up so users can input all the necesarry info in the config file and start blogging. Further reiterations are in progress to turn this into a Wordpress theme or make it fully editable with Cloudcannon CMS. The design is my own and I cannot let you resell this unless you [contact me](mailto:alex@collectivelymade.com)
+Progress features quick and simple environment is set up so users can input all the necesarry info in the config file and start blogging. Further reiterations are in progress to turn this into a Wordpress theme or make it fully editable with Cloudcannon CMS. I cannot let you resell this unless you [contact me](mailto:alex@collectivelymade.com)
 
 If you'd like give me credit somewhere on your blog or tweet a shout out to
 [@alexanderussell](https://twitter.com/alexanderussell), that would be pretty sweet. 
 
-If you feel like donating — [Give it a thought.](http://CHANGE ME)
+If you feel like donating — [Give it a thought.](https://flattr.com/profile/alexanderussell)
 
 ---
 
@@ -27,9 +27,9 @@ If you feel like donating — [Give it a thought.](http://CHANGE ME)
 5.  ???
 6.  Profit
 
-## [Preview the Theme](http://CHANGE)
+## [Preview the Theme](http://github.com/alexanderussell/progress-for-jekyll/)
 =======
- [Preview the Theme](http://CHANGE)
+ [Preview the Theme](http://github.com/alexanderussell/progress-for-jekyll/)
  
 ``` bash
 progress-for-jekyll/
@@ -69,7 +69,7 @@ Change your name, bio, Twitter url, email, Dribbble URL, etc.
 
 ### Top Navigation Links
 
-Edit page/post titles and URLs to include in the site's navigation. For external links use "url:" instead of "href:".
+Edit page/post titles and URLs to include in the site's navigation. For external links use "external: true".
 
 ``` yaml
 # sample top navigation links
@@ -79,7 +79,8 @@ links:
   - title: Other Page
     href: /other-page
   - title: External Page
-    url: http://alexanderussell.org
+    href: http://alexanderussell.org
+    external: true
 ```
 
 ## Other Stuff
@@ -93,11 +94,6 @@ For the most part you can leave these as is since the author/owner details are p
 ### Adding Posts and Pages
 
 There are two main content layouts: `post.html` (for posts) and `page.html` (for pages). Pages span the full-width of the content, while posts leave space for related posts and the reading progress indicator when on the longform view.
-
-
-``` yaml
-
-```
 
 
 ## License

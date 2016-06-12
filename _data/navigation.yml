@@ -1,4 +1,4 @@
-# href if page on site, url if page is offsite
+# external: true to link offsite
 
 - title: Home
   href: "/"
@@ -7,6 +7,8 @@
 - title: Archive
   href: "/archive"
 - title: Donate
-  url: ""
+  href: "https://flattr.com/profile/alexanderussell"
+  external: true
 - title: Alex Who?
-  url: "http://alexanderussell.org"
+  href: "http://alexanderussell.org"
+  external: true

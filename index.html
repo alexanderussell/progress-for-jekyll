@@ -6,7 +6,7 @@ title: Home
 <div class="articles">
   {% for post in paginator.posts limit:5  %}
   {% unless post.draft %}
-  <article>
+  <article class="post">
     <header>
       {% if post.img %}
       <img src="{{site.baseurl}}/img/{{post.img}}" alt="{{post.img}}">

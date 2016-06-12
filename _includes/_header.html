@@ -6,7 +6,7 @@
     <ul>
     {% for link in site.data.navigation %}{% if link.href == page.dir %} {% assign class = "current" %} {% else %} {% assign class = "normal" %} {% endif %}
       <li>
-        <a href="{% if link.href %}{{ site.baseurl }}{{ link.href }}{% endif %}{% if link.url %}{{ link.url }}{% endif %}">{{ link.title }}</a>
+        <a href="{% if link.external == false %}{{ site.baseurl }}{{ link.href }}{% endif %}{% if link.external == true %}{{ link.href }}{% endif %}">{{ link.title }}</a>
       </li>
     {% endfor %}
     </ul>
