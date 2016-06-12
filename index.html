@@ -44,23 +44,23 @@ title: Home
   
     {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" >
-      Older
+      Previous
     </a>
     
     {% else %}
     <a class="button disabled" >
-      Older
+      Previous
     </a>
     {% endif %}
 
     {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" >
-      Newer
+      Next
     </a>
     
     {% else %}
     <a class="button disabled" >
-      Newer
+      Next
     </a>
     {% endif %}
   </div>
