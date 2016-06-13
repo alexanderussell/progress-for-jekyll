@@ -5,7 +5,7 @@ author: "Alexander Russell"
 img: img-1.png
 ---
 
-Progress was built and inspired by [Cody House's](https://codyhouse.co/) [Reading Progress Indicator](https://codyhouse.co/demo/reading-progress-indicator/index.html). The folks over at Cody House are pretty fantastic and are making some awesome things. They're also super responsive to comments, so head on over there and check out what they've been doing. 
+Progress was built by [Alexander Russell](http://alexanderussell.org) and inspired by [Cody House's](https://codyhouse.co/) [Reading Progress Indicator](https://codyhouse.co/demo/reading-progress-indicator/index.html). The folks over at Cody House are pretty fantastic and are making some awesome things. They're also super responsive to comments, so head on over there and check out what they've been doing. 
 
 Progress features a quick and simple environment that is set up so users can input all the necesarry info in the config file and start blogging. Further reiterations are in progress to turn this into a Wordpress theme or make it fully editable with Cloudcannon CMS. I cannot let you resell this unless you [contact me](mailto:alex@collectivelymade.com).
 
