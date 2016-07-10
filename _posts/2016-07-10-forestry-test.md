@@ -1,6 +1,6 @@
 ---
 title: Forestry Test
-date: '2016-07-10 01:46:06'
+date: '2016-07-10 01:46:00'
 layout: post
-draft: true
 ---
+Testing the super simple forestry CMS
