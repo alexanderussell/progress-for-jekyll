@@ -1,71 +1,409 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="articles">
-  {% for post in paginator.posts limit:5  %}
-  {% unless post.draft %}
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Progress &middot; A responsive blog theme that illustrates reading progress. Suited for continous reading.
+    
+  </title>
+
+<!-- Social Metadata -->
+
+  <meta content="your_facebook_app_id" property="fb:app_id">
+  <meta content="Progress" property="og:site_name">
+  
+    <meta content="Progress" property="og:title">
+  
+  
+    <meta content="website" property="og:type">
+  
+  
+    <meta content="" property="og:description">
+  
+  
+  
+  
+    <meta content="/img/logo.png" property="og:image">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@alexanderussell">
+  <meta name="twitter:creator" content="@alexanderussell">
+  
+    <meta name="twitter:title" content="Progress">
+  
+  
+  
+    <meta name="twitter:description" content="">
+  
+  
+
+  
+  <link rel="stylesheet" href="/progress-for-jekyll/css/reset.css">
+  <link rel="stylesheet" href="/progress-for-jekyll/css/style.css">
+
+  <script src="/progress-for-jekyll/js/modernizr.js"></script> 
+  
+
+
+</head>
+
+
+<body>
+  <header class="header">
+  <h1>
+    <a href="http://alexanderussell.github.io/progress-for-jekyll/" title="Home">Progress</a>
+  </h1>
+  <nav>
+    <ul>
+    
+      <li>
+        <a href="/progress-for-jekyll/"">Home</a>
+      </li>
+    
+      <li>
+        <a href="/progress-for-jekyll/about"">About</a>
+      </li>
+    
+      <li>
+        <a href="/progress-for-jekyll/archive"">Archive</a>
+      </li>
+    
+      <li>
+        <a href="https://flattr.com/profile/alexanderussell"">Donate</a>
+      </li>
+    
+      <li>
+        <a href="http://alexanderussell.org"">Alex Who?</a>
+      </li>
+    
+    </ul>
+  </nav>
+</header>
+
+      <main>
+        <div class="articles">
+  
+  
   <article class="post">
     <header>
-      {% if post.img %}
-      <img src="{{site.baseurl}}/img/{{post.img}}" alt="{{post.img}}">
-      {% endif %}
-      <h1> {{ post.title }} </h1>
+      
+      <h1> Forestry Test </h1>
     </header>
     
-    {{ post.content }}
-    {% include _share-post.html %}
+    <p>THis is a test using the seemingly super-simple Forestry CMS</p>
+
+    <div class="share-page">
+    <br>
+    <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Forestry Test&quot;%20http://alexanderussell.github.io/progress-for-jekyll/2016/07/10/forestry-test/%20via%20&#64;alexanderussell" data-dnt="true">Share on Twitter</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</div>
 
   </article>
-  {% endunless %}
-  {% endfor %}
+  
+  
+  
+  <article class="post">
+    <header>
+      
+      <img src="/progress-for-jekyll/img/img-1.png" alt="img-1.png">
+      
+      <h1> Introduction to Progress </h1>
+    </header>
+    
+    <p>Progress was built by <a href="http://alexanderussell.org">Alexander Russell</a> and inspired by <a href="https://codyhouse.co/">Cody House’s</a> <a href="https://codyhouse.co/demo/reading-progress-indicator/index.html">Reading Progress Indicator</a>. The folks over at Cody House are pretty fantastic and are making some awesome things. They’re also super responsive to comments, so head on over there and check out what they’ve been doing.</p>
+
+<p>Progress features a quick and simple environment that is set up so users can input all the necesarry info in the config file and start blogging. Further reiterations are in progress to turn this into a Wordpress theme or make it fully editable with Cloudcannon CMS. I cannot let you resell this unless you <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#097;&#108;&#101;&#120;&#064;&#099;&#111;&#108;&#108;&#101;&#099;&#116;&#105;&#118;&#101;&#108;&#121;&#109;&#097;&#100;&#101;&#046;&#099;&#111;&#109;">contact me</a>.</p>
+
+<p>If you’d like give credit somewhere on your blog or tweet a shout out to
+<a href="https://twitter.com/alexanderussell">@alexanderussell</a>, that would be pretty sweet.</p>
+
+<p>If you feel like donating — <a href="https://flattr.com/profile/alexanderussell">Give it a thought.</a></p>
+
+<h2 id="features">Features:</h2>
+<ul>
+  <li>flexible, uses max-width for responsive goodness</li>
+  <li>beautiful reading progress indicator courtesy of <a href="https://codyhouse.co/">CodyHouse</a></li>
+  <li>retina images using @2x</li>
+  <li>post loop showing 5 posts per page</li>
+  <li>archive for posterity sake</li>
+</ul>
+
+<h2 id="basic-setup">Basic Setup</h2>
+
+<ol>
+  <li><a href="http://jekyllrb.com">Install Jekyll</a> if you haven’t already.</li>
+  <li>Download this bad boy.</li>
+  <li>Fork the <a href="http://github.com/alexanderussell/progress-for-jekyll/">Progress repo</a></li>
+  <li>Twerk it out so it’s just for you.</li>
+  <li>???</li>
+  <li>Profit</li>
+</ol>
+
+<h2 id="preview-the-themehttpalexanderussellgithubioprogress-for-jekyll"><a href="http://alexanderussell.github.io/progress-for-jekyll">Preview the Theme</a></h2>
+<p><br /></p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>progress-for-jekyll/
+├── data
+|    ├── navigation.yml  //an array of navigation items <span class="k">for </span>easy editing
+├── _includes
+|    ├── _footer.html  //site footer
+|    ├── _head.html  //site head
+|    ├── _header.html  //header <span class="k">for </span>navigation and logo/title
+|    ├── _share-post.html  //share buttons
+├── _layouts
+|    ├── default.html  //all the bare necessities
+|    ├── page.html  //page layout
+|    └── post.html  //post layout
+├── _posts
+├── css  //preprocessed styles. good idea to minify
+├── img  //images and graphics used <span class="k">in </span>css and js
+├── js
+|   ├── jquery-2.1.4.js  //jQuery <span class="k">for </span>the win.
+|   ├── main.js  //jQuery plugins and settings <span class="k">for </span>the progress indicator.
+|   └── modernizer.js  //modernize it, yo.
+├── images  //images <span class="k">for </span>posts and pages
+├── about.md  //about page
+├── archive.md  //lists all posts from latest to oldest organized by date
+└── index.html  //homepage. lists 5 most recent posts w/ pagination
+</code></pre>
+</div>
+
+<h1 id="customization">Customization</h1>
+
+<h3 id="configyml">_config.yml</h3>
+
+<p>Most of the variables found here are used in the .html files found in <code class="highlighter-rouge">_includes</code> if you need to add or remove anything. A good place to start would be to change the title, tagline, description, and url of your site. When working locally comment out <code class="highlighter-rouge">url</code> or else you will get a bunch of broken links because they are absolute and prefixed with <code class="highlighter-rouge">http://alexanderussell.github.io</code> in the various <code class="highlighter-rouge">_includes</code> and <code class="highlighter-rouge">_layouts</code>. Just remember to uncomment <code class="highlighter-rouge">url</code> when building for deployment or pushing to <strong>gh-pages</strong>…</p>
+
+<h3 id="ownerauthor-information">Owner/Author Information</h3>
+
+<p>Change your name, bio, Twitter url, email, Dribbble URL, etc.</p>
+
+<h3 id="top-navigation-links">Top Navigation Links</h3>
+
+<p>Edit page/post titles and URLs to include in the site’s navigation. For external links use “external: true”.</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="c1"># sample top navigation links</span>
+<span class="s">links</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">title</span><span class="pi">:</span> <span class="s">About Page</span>
+    <span class="s">href</span><span class="pi">:</span> <span class="s">/about</span>
+  <span class="pi">-</span> <span class="s">title</span><span class="pi">:</span> <span class="s">Other Page</span>
+    <span class="s">href</span><span class="pi">:</span> <span class="s">/other-page</span>
+  <span class="pi">-</span> <span class="s">title</span><span class="pi">:</span> <span class="s">External Page</span>
+    <span class="s">href</span><span class="pi">:</span> <span class="s">http://alexanderussell.org</span>
+    <span class="s">external</span><span class="pi">:</span> <span class="s">true</span>
+</code></pre>
+</div>
+<p><br /></p>
+
+<h2 id="other-stuff">Other Stuff</h2>
+
+<p>The rest is just your average Jekyll config settings. Nothing too crazy here…</p>
+
+<h3 id="includes">_includes</h3>
+
+<p>For the most part you can leave these as is since the author/owner details are pulled from <code class="highlighter-rouge">_config.yml</code>. That said you’ll probably want to customize the copyright stuff in <code class="highlighter-rouge">_footer.html</code> to your liking.</p>
+
+<h3 id="adding-posts-and-pages">Adding Posts and Pages</h3>
+
+<p>There are two main content layouts: <code class="highlighter-rouge">post.html</code> (for posts) and <code class="highlighter-rouge">page.html</code> (for pages). Pages span the full-width of the content, while posts leave space for related posts and the reading progress indicator when on the longform view.</p>
+
+<h2 id="license">License</h2>
+
+<p>This is free to use, fork, do whatever you want. Please <em>do not</em> sell this design though. You don’t need to link me to it, but please contact me if you intend to market this theme. I am releasing premium versions of this design for select CMS’s.</p>
+
+    <div class="share-page">
+    <br>
+    <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Introduction to Progress&quot;%20http://alexanderussell.github.io/progress-for-jekyll/2016/01/03/introduction/%20via%20&#64;alexanderussell" data-dnt="true">Share on Twitter</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</div>
+
+  </article>
+  
+  
+  
+  <article class="post">
+    <header>
+      
+      <h1> Now, More Than Ever Before... </h1>
+    </header>
+    
+    <blockquote>
+  <p>We had awoken, or were awakening, and we were striving for an ever perfect state of wakefulness, whereas the ambition and quest for happiness of the others consisted of linking their opinions, ideals, and duties, their life and happiness, ever more closely with those of the herd. They, too, strove; they, too showed signs of strength and greatness. But as we saw it, whereas we marked men represented Nature’s determination to create something new, individual, and forward-looking, the others lived in the determination to stay the same. For them mankind–which they loved as much as we did–was a fully formed entity that had to be preserved and protected. For us mankind was a distant future toward which we were all journeying, whose aspect no one knew, whose laws weren’t written down anywhere.
+<cite>-  Hermann Hesse </cite></p>
+</blockquote>
+
+    <div class="share-page">
+    <br>
+    <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Now, More Than Ever Before...&quot;%20http://alexanderussell.github.io/progress-for-jekyll/2016/01/02/now-more-than-ever/%20via%20&#64;alexanderussell" data-dnt="true">Share on Twitter</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</div>
+
+  </article>
+  
+  
+  
+  <article class="post">
+    <header>
+      
+      <h1> What's Jekyll? </h1>
+    </header>
+    
+    <p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/jekyll/jekyll/blob/master/README.markdown">the project’s readme</a>:</p>
+
+<blockquote>
+  <p>Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>
+</blockquote>
+
+<p>It’s an immensely useful tool. Find out more by <a href="https://github.com/jekyll/jekyll">visiting the project on GitHub</a>.</p>
+
+    <div class="share-page">
+    <br>
+    <a class="share" href="https://twitter.com/intent/tweet?text=&quot;What's Jekyll?&quot;%20http://alexanderussell.github.io/progress-for-jekyll/2016/01/01/whats-jekyll/%20via%20&#64;alexanderussell" data-dnt="true">Share on Twitter</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</div>
+
+  </article>
+  
+  
+  
+  <article class="post">
+    <header>
+      
+      <h1> Post with Figure </h1>
+    </header>
+    
+    <p>This is a post that uses a <code class="highlighter-rouge">figure</code>. It stacks these images and places a nice little caption below if you fill out <code class="highlighter-rouge">figcaption</code>.</p>
+
+<h3 id="single-image-figure">Single Image Figure</h3>
+
+<figure>
+	<img src="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg" />
+	<figcaption>Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</figcaption>
+</figure>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4</pre></td><td class="code"><pre><span class="nt">&lt;figure&gt;</span>
+	<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/img/img-1.png"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;figcaption&gt;</span>Caption describing this image.<span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+    <div class="share-page">
+    <br>
+    <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Post with Figure&quot;%20http://alexanderussell.github.io/progress-for-jekyll/2015/08/05/post-with-figure/%20via%20&#64;alexanderussell" data-dnt="true">Share on Twitter</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</div>
+
+  </article>
+  
+  
 
   <aside class="read-more">
     <ul>
-      {% for post in paginator.posts limit:5  %}
-      {% unless post.draft %}
+      
+      
       <li>
         <a href="#">
-          <h3><em>{{post.title}}</em></h3>
-          <small><b>{{post.author}}</b></small>
+          <h3><em>Forestry Test</em></h3>
+          <small><b></b></small>
           <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36"><circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
         </a>
       </li>
-      {% endunless %}
-      {% endfor %}
+      
+      
+      
+      <li>
+        <a href="#">
+          <h3><em>Introduction to Progress</em></h3>
+          <small><b>Alexander Russell</b></small>
+          <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36"><circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="#">
+          <h3><em>Now, More Than Ever Before...</em></h3>
+          <small><b>Hermann Hesse</b></small>
+          <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36"><circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="#">
+          <h3><em>What's Jekyll?</em></h3>
+          <small><b></b></small>
+          <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36"><circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="#">
+          <h3><em>Post with Figure</em></h3>
+          <small><b></b></small>
+          <svg x="0px" y="0px" width="36px" height="36px" viewBox="0 0 36 36"><circle fill="none" stroke-width="2" cx="18" cy="18" r="16" stroke-dasharray="100 100" stroke-dashoffset="100" transform="rotate(-90 18 18)"></circle></svg>
+        </a>
+      </li>
+      
+      
     </ul>
 
   </aside>
 
-  {% if paginator.total_pages > 1 %}
+  
 
   <div class="pagination nugget-info tc">
   
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" >
-      Previous
-    </a>
     
-    {% else %}
     <a class="button disabled" >
       Previous
     </a>
-    {% endif %}
+    
 
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" >
+    
+    <a href="/progress-for-jekyll/blog/page2" >
       Next
     </a>
     
-    {% else %}
-    <a class="button disabled" >
-      Next
-    </a>
-    {% endif %}
+    
   </div>
 
-  {% endif %}
+  
 </div>
 
 
+
+      </main>
+
+      <footer class="footer tc">
+  <small>
+    &copy; 2016 Alex Russell
+    <br>
+    Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://alexanderussell.org/progress-for-jekyll/">Progress Theme</a>.
+  </small>
+</footer>
+
+
+
+    <script src="/progress-for-jekyll/js/jquery-2.1.4.js"></script>
+    <script src="/progress-for-jekyll/js/main.js"></script>
+
+    
+  </body>
+</html>

@@ -1,28 +1,275 @@
----
-layout: null
----
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>{{ site.title }}</title>
- <link href="{{ site.url }}{{ site.baseurl }}/atom.xml" rel="self"/>
- <link href="{{ site.url }}{{ site.baseurl }}/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
+ <title>Progress</title>
+ <link href="http://alexanderussell.github.io/progress-for-jekyll/atom.xml" rel="self"/>
+ <link href="http://alexanderussell.github.io/progress-for-jekyll/"/>
+ <updated>2016-07-10T01:44:53+00:00</updated>
+ <id>http://alexanderussell.github.io</id>
  <author>
-   <name>{{ site.author.name }}</name>
-   <email>{{ site.author.email }}</email>
+   <name></name>
+   <email></email>
  </author>
 
- {% for post in site.posts %}
+ 
  <entry>
-   <title>{{ post.title | xml_escape }}</title>
-   <link href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <title>Forestry Test</title>
+   <link href="http://alexanderussell.github.io/progress-for-jekyll/2016/07/10/forestry-test/"/>
+   <updated>2016-07-10T01:23:00+00:00</updated>
+   <id>http://alexanderussell.github.io/2016/07/10/forestry-test</id>
+   <content type="html">&lt;p&gt;THis is a test using the seemingly super-simple Forestry CMS&lt;/p&gt;
+</content>
  </entry>
- {% endfor %}
+ 
+ <entry>
+   <title>Introduction to Progress</title>
+   <link href="http://alexanderussell.github.io/progress-for-jekyll/2016/01/03/introduction/"/>
+   <updated>2016-01-03T00:00:00+00:00</updated>
+   <id>http://alexanderussell.github.io/2016/01/03/introduction</id>
+   <content type="html">&lt;p&gt;Progress was built by &lt;a href=&quot;http://alexanderussell.org&quot;&gt;Alexander Russell&lt;/a&gt; and inspired by &lt;a href=&quot;https://codyhouse.co/&quot;&gt;Cody House’s&lt;/a&gt; &lt;a href=&quot;https://codyhouse.co/demo/reading-progress-indicator/index.html&quot;&gt;Reading Progress Indicator&lt;/a&gt;. The folks over at Cody House are pretty fantastic and are making some awesome things. They’re also super responsive to comments, so head on over there and check out what they’ve been doing.&lt;/p&gt;
+
+&lt;p&gt;Progress features a quick and simple environment that is set up so users can input all the necesarry info in the config file and start blogging. Further reiterations are in progress to turn this into a Wordpress theme or make it fully editable with Cloudcannon CMS. I cannot let you resell this unless you &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#097;&amp;#108;&amp;#101;&amp;#120;&amp;#064;&amp;#099;&amp;#111;&amp;#108;&amp;#108;&amp;#101;&amp;#099;&amp;#116;&amp;#105;&amp;#118;&amp;#101;&amp;#108;&amp;#121;&amp;#109;&amp;#097;&amp;#100;&amp;#101;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;contact me&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you’d like give credit somewhere on your blog or tweet a shout out to
+&lt;a href=&quot;https://twitter.com/alexanderussell&quot;&gt;@alexanderussell&lt;/a&gt;, that would be pretty sweet.&lt;/p&gt;
+
+&lt;p&gt;If you feel like donating — &lt;a href=&quot;https://flattr.com/profile/alexanderussell&quot;&gt;Give it a thought.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;features&quot;&gt;Features:&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;flexible, uses max-width for responsive goodness&lt;/li&gt;
+  &lt;li&gt;beautiful reading progress indicator courtesy of &lt;a href=&quot;https://codyhouse.co/&quot;&gt;CodyHouse&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;retina images using @2x&lt;/li&gt;
+  &lt;li&gt;post loop showing 5 posts per page&lt;/li&gt;
+  &lt;li&gt;archive for posterity sake&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;basic-setup&quot;&gt;Basic Setup&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Install Jekyll&lt;/a&gt; if you haven’t already.&lt;/li&gt;
+  &lt;li&gt;Download this bad boy.&lt;/li&gt;
+  &lt;li&gt;Fork the &lt;a href=&quot;http://github.com/alexanderussell/progress-for-jekyll/&quot;&gt;Progress repo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Twerk it out so it’s just for you.&lt;/li&gt;
+  &lt;li&gt;???&lt;/li&gt;
+  &lt;li&gt;Profit&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;preview-the-themehttpalexanderussellgithubioprogress-for-jekyll&quot;&gt;&lt;a href=&quot;http://alexanderussell.github.io/progress-for-jekyll&quot;&gt;Preview the Theme&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;progress-for-jekyll/
+├── data
+|    ├── navigation.yml  //an array of navigation items &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;easy editing
+├── _includes
+|    ├── _footer.html  //site footer
+|    ├── _head.html  //site head
+|    ├── _header.html  //header &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;navigation and logo/title
+|    ├── _share-post.html  //share buttons
+├── _layouts
+|    ├── default.html  //all the bare necessities
+|    ├── page.html  //page layout
+|    └── post.html  //post layout
+├── _posts
+├── css  //preprocessed styles. good idea to minify
+├── img  //images and graphics used &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;css and js
+├── js
+|   ├── jquery-2.1.4.js  //jQuery &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the win.
+|   ├── main.js  //jQuery plugins and settings &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the progress indicator.
+|   └── modernizer.js  //modernize it, yo.
+├── images  //images &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;posts and pages
+├── about.md  //about page
+├── archive.md  //lists all posts from latest to oldest organized by date
+└── index.html  //homepage. lists 5 most recent posts w/ pagination
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;customization&quot;&gt;Customization&lt;/h1&gt;
+
+&lt;h3 id=&quot;configyml&quot;&gt;_config.yml&lt;/h3&gt;
+
+&lt;p&gt;Most of the variables found here are used in the .html files found in &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes&lt;/code&gt; if you need to add or remove anything. A good place to start would be to change the title, tagline, description, and url of your site. When working locally comment out &lt;code class=&quot;highlighter-rouge&quot;&gt;url&lt;/code&gt; or else you will get a bunch of broken links because they are absolute and prefixed with &lt;code class=&quot;highlighter-rouge&quot;&gt;http://alexanderussell.github.io&lt;/code&gt; in the various &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts&lt;/code&gt;. Just remember to uncomment &lt;code class=&quot;highlighter-rouge&quot;&gt;url&lt;/code&gt; when building for deployment or pushing to &lt;strong&gt;gh-pages&lt;/strong&gt;…&lt;/p&gt;
+
+&lt;h3 id=&quot;ownerauthor-information&quot;&gt;Owner/Author Information&lt;/h3&gt;
+
+&lt;p&gt;Change your name, bio, Twitter url, email, Dribbble URL, etc.&lt;/p&gt;
+
+&lt;h3 id=&quot;top-navigation-links&quot;&gt;Top Navigation Links&lt;/h3&gt;
+
+&lt;p&gt;Edit page/post titles and URLs to include in the site’s navigation. For external links use “external: true”.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# sample top navigation links&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;links&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;About Page&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/about&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Other Page&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/other-page&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;External Page&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;http://alexanderussell.org&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;external&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;other-stuff&quot;&gt;Other Stuff&lt;/h2&gt;
+
+&lt;p&gt;The rest is just your average Jekyll config settings. Nothing too crazy here…&lt;/p&gt;
+
+&lt;h3 id=&quot;includes&quot;&gt;_includes&lt;/h3&gt;
+
+&lt;p&gt;For the most part you can leave these as is since the author/owner details are pulled from &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;. That said you’ll probably want to customize the copyright stuff in &lt;code class=&quot;highlighter-rouge&quot;&gt;_footer.html&lt;/code&gt; to your liking.&lt;/p&gt;
+
+&lt;h3 id=&quot;adding-posts-and-pages&quot;&gt;Adding Posts and Pages&lt;/h3&gt;
+
+&lt;p&gt;There are two main content layouts: &lt;code class=&quot;highlighter-rouge&quot;&gt;post.html&lt;/code&gt; (for posts) and &lt;code class=&quot;highlighter-rouge&quot;&gt;page.html&lt;/code&gt; (for pages). Pages span the full-width of the content, while posts leave space for related posts and the reading progress indicator when on the longform view.&lt;/p&gt;
+
+&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
+
+&lt;p&gt;This is free to use, fork, do whatever you want. Please &lt;em&gt;do not&lt;/em&gt; sell this design though. You don’t need to link me to it, but please contact me if you intend to market this theme. I am releasing premium versions of this design for select CMS’s.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Now, More Than Ever Before...</title>
+   <link href="http://alexanderussell.github.io/progress-for-jekyll/2016/01/02/now-more-than-ever/"/>
+   <updated>2016-01-02T00:00:00+00:00</updated>
+   <id>http://alexanderussell.github.io/2016/01/02/now-more-than-ever</id>
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;We had awoken, or were awakening, and we were striving for an ever perfect state of wakefulness, whereas the ambition and quest for happiness of the others consisted of linking their opinions, ideals, and duties, their life and happiness, ever more closely with those of the herd. They, too, strove; they, too showed signs of strength and greatness. But as we saw it, whereas we marked men represented Nature’s determination to create something new, individual, and forward-looking, the others lived in the determination to stay the same. For them mankind–which they loved as much as we did–was a fully formed entity that had to be preserved and protected. For us mankind was a distant future toward which we were all journeying, whose aspect no one knew, whose laws weren’t written down anywhere.
+&lt;cite&gt;-  Hermann Hesse &lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What&#39;s Jekyll?</title>
+   <link href="http://alexanderussell.github.io/progress-for-jekyll/2016/01/01/whats-jekyll/"/>
+   <updated>2016-01-01T00:00:00+00:00</updated>
+   <id>http://alexanderussell.github.io/2016/01/01/whats-jekyll</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It’s an immensely useful tool. Find out more by &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Post with Figure</title>
+   <link href="http://alexanderussell.github.io/progress-for-jekyll/2015/08/05/post-with-figure/"/>
+   <updated>2015-08-05T00:00:00+00:00</updated>
+   <id>http://alexanderussell.github.io/2015/08/05/post-with-figure</id>
+   <content type="html">&lt;p&gt;This is a post that uses a &lt;code class=&quot;highlighter-rouge&quot;&gt;figure&lt;/code&gt;. It stacks these images and places a nice little caption below if you fill out &lt;code class=&quot;highlighter-rouge&quot;&gt;figcaption&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;single-image-figure&quot;&gt;Single Image Figure&lt;/h3&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg&quot; /&gt;
+	&lt;figcaption&gt;Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;figure&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/img/img-1.png&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;figcaption&amp;gt;&lt;/span&gt;Caption describing this image.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figure&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>A Longform Post to Cogitate</title>
+   <link href="http://alexanderussell.github.io/progress-for-jekyll/2015/08/05/longform-post/"/>
+   <updated>2015-08-05T00:00:00+00:00</updated>
+   <id>http://alexanderussell.github.io/2015/08/05/longform-post</id>
+   <content type="html">&lt;p&gt;Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney’s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.&lt;/p&gt;
+
+&lt;p&gt;Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.&lt;/p&gt;
+
+&lt;h2 id=&quot;cupidatat-90s-lo-fi-authentic-try-hard&quot;&gt;Cupidatat 90’s lo-fi authentic try-hard&lt;/h2&gt;
+
+&lt;p&gt;In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90’s.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sartorial hoodie&lt;/li&gt;
+  &lt;li&gt;Labore viral forage&lt;/li&gt;
+  &lt;li&gt;Tote bag selvage&lt;/li&gt;
+  &lt;li&gt;DIY exercitation et id ugh tumblr church-key&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.&lt;/p&gt;
+
+&lt;p&gt;Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven’t heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney’s Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.&lt;/p&gt;
+
+&lt;h2 id=&quot;forage-occaecat-cardigan-qui&quot;&gt;Forage occaecat cardigan qui&lt;/h2&gt;
+
+&lt;p&gt;Fashion axe hella gastropub lo-fi kogi 90’s aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Whatever velit occaecat quis deserunt gastropub, leggings elit tousled roof party 3 wolf moon kogi pug blue bottle ea. Fashion axe shabby chic Austin quinoa pickled laborum bitters next level, disrupt deep v accusamus non fingerstache.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney’s next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney’s sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.&lt;/p&gt;
+
+&lt;h2 id=&quot;hoodie-duis&quot;&gt;Hoodie Duis&lt;/h2&gt;
+
+&lt;p&gt;Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90’s pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.&lt;/p&gt;
+
+&lt;h3 id=&quot;thundercats-ho&quot;&gt;Thundercats Ho!&lt;/h3&gt;
+
+&lt;p&gt;Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney’s seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.&lt;/p&gt;
+
+&lt;p&gt;Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney’s selfies. Odd Future Banksy non authentic.&lt;/p&gt;
+
+&lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Example Post</title>
+   <link href="http://alexanderussell.github.io/progress-for-jekyll/2015/08/05/example-post/"/>
+   <updated>2015-08-05T00:00:00+00:00</updated>
+   <id>http://alexanderussell.github.io/2015/08/05/example-post</id>
+   <content type="html">&lt;p&gt;“Whenever you feel like criticizing any one,” he told me, “just remember that all the people in this world haven’t had the advantages that you’ve had.”&lt;/p&gt;
+
+&lt;p&gt;He didn’t say any more, but we’ve always been unusually communicative in a reserved way, and I understood that he meant a great deal more than that. In consequence, I’m inclined to reserve all judgments, a habit that has opened up many curious natures to me and also made me the victim of not a few veteran bores. The abnormal mind is quick to detect and attach itself to this quality when it appears in a normal person, and so it came about that in college I was unjustly accused of being a politician, because I was privy to the secret griefs of wild, unknown men. Most of the confidences were unsought — frequently I have feigned sleep, preoccupation, or a hostile levity when I realized by some unmistakable sign that an intimate revelation was quivering on the horizon; for the intimate revelations of young men, or at least the terms in which they express them, are usually plagiaristic and marred by obvious suppressions. Reserving judgments is a matter of infinite hope. I am still a little afraid of missing something if I forget that, as my father snobbishly suggested, and I snobbishly repeat, a sense of the fundamental decencies is parcelled out unequally at birth.&lt;/p&gt;
+
+&lt;p&gt;And, after boasting this way of my tolerance, I come to the admission that it has a limit. Conduct may be founded on the hard rock or the wet marshes, but after a certain point I don’t care what it’s founded on. When I came back from the East last autumn I felt that I wanted the world to be in uniform and at a sort of moral attention forever; I wanted no more riotous excursions with privileged glimpses into the human heart. Only Gatsby, the man who gives his name to this book, was exempt from my reaction — Gatsby, who represented everything for which I have an unaffected scorn. If personality is an unbroken series of successful gestures, then there was something gorgeous about him, some heightened sensitivity to the promises of life, as if he were related to one of those intricate machines that register earthquakes ten thousand miles away. This responsiveness had nothing to do with that flabby impressionability which is dignified under the name of the “creative temperament.”— it was an extraordinary gift for hope, a romantic readiness such as I have never found in any other person and which it is not likely I shall ever find again. No — Gatsby turned out all right at the end; it is what preyed on Gatsby, what foul dust floated in the wake of his dreams that temporarily closed out my interest in the abortive sorrows and short-winded elations of men.
+My family have been prominent, well-to-do people in this Middle Western city for three generations. The Carraways are something of a clan, and we have a tradition that we’re descended from the Dukes of Buccleuch, but the actual founder of my line was my grandfather’s brother, who came here in fifty-one, sent a substitute to the Civil War, and started the wholesale hardware business that my father carries on to-day.&lt;/p&gt;
+
+&lt;p&gt;I never saw this great-uncle, but I’m supposed to look like him — with special reference to the rather hard-boiled painting that hangs in father’s office. I graduated from New Haven in 1915, just a quarter of a century after my father, and a little later I participated in that delayed Teutonic migration known as the Great War. I enjoyed the counter-raid so thoroughly that I came back restless. Instead of being the warm centre of the world, the Middle West now seemed like the ragged edge of the universe — so I decided to go East and learn the bond business. Everybody I knew was in the bond business, so I supposed it could support one more single man. All my aunts and uncles talked it over as if they were choosing a prep school for me, and finally said, “Why — ye — es,” with very grave, hesitant faces. Father agreed to finance me for a year, and after various delays I came East, permanently, I thought, in the spring of twenty-two.&lt;/p&gt;
+
+&lt;p&gt;The practical thing was to find rooms in the city, but it was a warm season, and I had just left a country of wide lawns and friendly trees, so when a young man at the office suggested that we take a house together in a commuting town, it sounded like a great idea. He found the house, a weather-beaten cardboard bungalow at eighty a month, but at the last minute the firm ordered him to Washington, and I went out to the country alone. I had a dog — at least I had him for a few days until he ran away — and an old Dodge and a Finnish woman, who made my bed and cooked breakfast and muttered Finnish wisdom to herself over the electric stove.&lt;/p&gt;
+
+&lt;p&gt;It was lonely for a day or so until one morning some man, more recently arrived than I, stopped me on the road.&lt;/p&gt;
+
+&lt;p&gt;“How do you get to West Egg village?” he asked helplessly.&lt;/p&gt;
+
+&lt;p&gt;I told him. And as I walked on I was lonely no longer. I was a guide, a pathfinder, an original settler. He had casually conferred on me the freedom of the neighborhood.
+And so with the sunshine and the great bursts of leaves growing on the trees, just as things grow in fast movies, I had that familiar conviction that life was beginning over again with the summer.&lt;/p&gt;
+
+&lt;p&gt;There was so much to read, for one thing, and so much fine health to be pulled down out of the young breath-giving air. I bought a dozen volumes on banking and credit and investment securities, and they stood on my shelf in red and gold like new money from the mint, promising to unfold the shining secrets that only Midas and Morgan and Maecenas knew. And I had the high intention of reading many other books besides. I was rather literary in college — one year I wrote a series of very solemn and obvious editorials for the “Yale News.”— and now I was going to bring back all such things into my life and become again that most limited of all specialists, the “well-rounded man.” This isn’t just an epigram — life is much more successfully looked at from a single window, after all.&lt;/p&gt;
+
+&lt;p&gt;It was a matter of chance that I should have rented a house in one of the strangest communities in North America. It was on that slender riotous island which extends itself due east of New York — and where there are, among other natural curiosities, two unusual formations of land. Twenty miles from the city a pair of enormous eggs, identical in contour and separated only by a courtesy bay, jut out into the most domesticated body of salt water in the Western hemisphere, the great wet barnyard of Long Island Sound. They are not perfect ovals — like the egg in the Columbus story, they are both crushed flat at the contact end — but their physical resemblance must be a source of perpetual confusion to the gulls that fly overhead. To the wingless a more arresting phenomenon is their dissimilarity in every particular except shape and size.
+I lived at West Egg, the — well, the less fashionable of the two, though this is a most superficial tag to express the bizarre and not a little sinister contrast between them. My house was at the very tip of the egg, only fifty yards from the Sound, and squeezed between two huge places that rented for twelve or fifteen thousand a season. The one on my right was a colossal affair by any standard — it was a factual imitation of some Hotel de Ville in Normandy, with a tower on one side, spanking new under a thin beard of raw ivy, and a marble swimming pool, and more than forty acres of lawn and garden. It was Gatsby’s mansion. Or, rather, as I didn’t know Mr. Gatsby, it was a mansion inhabited by a gentleman of that name. My own house was an eyesore, but it was a small eyesore, and it had been overlooked, so I had a view of the water, a partial view of my neighbor’s lawn, and the consoling proximity of millionaires — all for eighty dollars a month.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Test Post</title>
+   <link href="http://alexanderussell.github.io/progress-for-jekyll/2013/08/17/test-post/"/>
+   <updated>2013-08-17T00:00:00+00:00</updated>
+   <id>http://alexanderussell.github.io/2013/08/17/test-post</id>
+   <content type="html">&lt;p&gt;Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney’s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.&lt;/p&gt;
+
+&lt;p&gt;Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
 
 </feed>
