@@ -2,13 +2,13 @@
 
 - title: Home
   href: "/"
-- title: About
-  href: "/about"
+- title: Address
+  href: "/address"
 - title: Archive
   href: "/archive"
-- title: Donate
-  href: "https://flattr.com/profile/alexanderussell"
-  external: true
-- title: Alex Who?
-  href: "http://alexanderussell.org"
-  external: true
+#- title: Donate
+#  href: "https://flattr.com/profile/alexanderussell"
+#  external: true
+#- title: Alex Who?
+#  href: "http://alexanderussell.org"
+#  external: true
