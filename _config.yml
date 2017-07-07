@@ -2,23 +2,18 @@
 permalink:           pretty
 
 # Setup
-title:               Progress
-tagline:             A responsive blog theme that illustrates reading progress. Suited for continous reading.
-url:                 http://alexanderussell.github.io
-baseurl:             /progress-for-jekyll
+title:               老洪发车公告板
+tagline:             关于发车信息、新手教程、地址信息。
+url:                 http://liujun3712.github.io
+baseurl:             /DrivesGroup
 analytics_id:
 
 # Owner/author information
 owner:
-  name:           Alex Russell
+  name:           Mr. Hong
   avatar:         avatar.png
   bio:            "Designer."
-  email:          alex@collectivelymade.com
-  twitter:        alexanderussell
-  github:         alexanderussell
-  instagram:      alexanderussell
-  dribbble:       alexanderussell
-  location:       "Lincoln, NE"
+
 
 
 # Custom vars
