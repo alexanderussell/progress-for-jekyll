@@ -2,10 +2,10 @@
 permalink:           pretty
 
 # Setup
-title:               Progress
-tagline:             A responsive blog theme that illustrates reading progress. Suited for continous reading.
-url:                 http://alexanderussell.github.io
-baseurl:             /progress-for-jekyll
+title:               Evandro Zanatta
+tagline:             Full-Stack Developer
+url:                 http://evandrozanatta.github.io
+baseurl:             /
 analytics_id:
 
 # Owner/author information
