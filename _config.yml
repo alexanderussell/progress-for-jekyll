@@ -4,13 +4,13 @@ permalink:           pretty
 # Setup
 title:               Progress
 tagline:             A responsive blog theme that illustrates reading progress. Suited for continous reading.
-url:                 https://bymyself-yoon.github.io
-baseurl:             ''
+url:                 "https://bymyself-yoon.github.io"
+baseurl:             "/bymyself-yoon.github.io/"
 analytics_id:
 
 # Owner/author information
 owner:
-  name:           Alex Russell
+  name:           S
   avatar:         avatar.png
   bio:            "Designer."
   email:          alex@collectivelymade.com
