@@ -5,7 +5,7 @@ permalink:           pretty
 title:               Progress
 tagline:             A responsive blog theme that illustrates reading progress. Suited for continous reading.
 url:                 bymyself-yoon.github.io
-baseurl:             /progress-for-jekyll
+baseurl:             bymyself-yoon.github.io
 analytics_id:
 
 # Owner/author information
