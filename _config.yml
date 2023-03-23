@@ -4,8 +4,8 @@ permalink:           pretty
 # Setup
 title:               Progress
 tagline:             A responsive blog theme that illustrates reading progress. Suited for continous reading.
-url:                 bymyself-yoon.github.io
-baseurl:             bymyself-yoon.github.io
+url:                 https://bymyself-yoon.github.io
+baseurl:             ''
 analytics_id:
 
 # Owner/author information
